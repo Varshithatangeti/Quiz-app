@@ -46,7 +46,7 @@ fetch(
         console.error(err);
     });
 
-//CONSTANTS
+
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
 
@@ -67,7 +67,7 @@ getNewQuestion = () => {
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
-    //Update the progress bar
+
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
